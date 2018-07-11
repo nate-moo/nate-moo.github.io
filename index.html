@@ -1,5 +1,4 @@
-<!DOCTYPE html>
-<html lang="en" class="index"><head>
+<html class="index" lang="en"><head>
 	<meta charset="utf-8">
 	<!-- NoNonsense Forum v26 © Copyright (CC-BY) Kroc Camen 2010-2015
 	     licensed under Creative Commons Attribution 3.0 <creativecommons.org/licenses/by/3.0/deed.en_GB>
@@ -14,7 +13,7 @@
 	<link rel="canonical" href="/">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!-- standard fav-icons / mobile tiles -->
-	<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+	<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
 	<link rel="apple-touch-icon" href="/apple-touch-icon.png">
 	<!-- Microsoft’s insane IE9+ pinned site syntax: <msdn.microsoft.com/library/gg131029> -->
 	<meta name="application-name" content="NoNonsense Forum">
@@ -27,25 +26,19 @@
 </head><body>
 <!-- =================================================================================================================== -->
 <header id="mast">
-	<h1><a href="/">
-		<img id="nnf_logo" src="/themes/greyscale/img/logo.png" width="32" height="32" alt=""><!--
+	<h1><a href="/index.html">
+		<img id="nnf_logo" alt="" src="/img/logo.png" width="32" height="32"><form id="search" method="get" action="http://google.com/search"><!--
+		--><input name="as_sitesearch" value="forum.camendesign.com" type="hidden"><!--
+		--><input id="query" name="as_q" placeholder="Google Search…" type="search"><!--
+		--><input id="go" src="/themes/greyscale/img/go.png" alt="Search" width="20" type="image" height="20"><!--
+	--></form><!--
 		--><span class="nnf_forum-name">This forum</span>
 	</a></h1>
 
-	<form id="search" method="get" action="http://google.com/search"><!--
-		--><input type="hidden" name="as_sitesearch" value="forum.camendesign.com"><!--
-		--><input id="query" type="search" name="as_q" placeholder="Google Search…"><!--
-		--><input id="go" type="image" src="/themes/greyscale/img/go.png" width="20" height="20" alt="Search"><!--
-	--></form>
+	
 
 	<nav>
-		<form id="nnf_lang" method="post">
-			<img src="/themes/greyscale/img/lang.png" width="20" height="20" alt="Language:" title="Language:">
-			<select name="lang" id="lang">
-				<option class="nnf_lang" value="" selected>English</option>
-			</select>
-			<input type="image" src="/themes/greyscale/img/go.png" width="20" height="20" alt="Set language">
-		</form>
+		
 		<ol id="index">
 			<li><a href="/">Index</a></li>
 			<li class="nnf_breadcrumb">» <a class="nnf_subforum-name" href="/sub-forum">Sub-forum</a></li>
@@ -61,7 +54,7 @@
 <section id="nnf_folders">
 	<h1>Sub-Forums</h1>
 	<ol class="ui"><li class="nnf_folder">
-		<img class="nnf_lock-threads" src="/themes/greyscale/img/security_open_32.png" width="16" height="16" alt="Replies-only:" title="Replies-only"><img class="nnf_lock-posts" src="/themes/greyscale/img/security_closed_32.png" width="16" height="16" alt="Read-only:" title="Read-only">
+		
 		<a class="nnf_folder-name" href="/sub-forum/">Sub-forum</a>
 		<span class="nnf_subforum-post"><a class="nnf_post-link" href="/forum/thread#postid"><time class="nnf_post-time" datetime="2012-01-01T00:00:00+00:00">01 Jan ’12 · 00:00</time></a> <b class="nnf_post-author nnf_mod">author</b></span>
 	</li></ol>
@@ -88,7 +81,7 @@
 	</ol></nav>
 	<ol class="ui"><li class="nnf_thread nnf_sticky">
 		<a class="nnf_thread-post" href="/thread#id"><time class="nnf_thread-time" datetime="2012-01-01T00:00:00+00:00">01 Jan ’12 · 00:00</time></a>
-		<i class="nnf_thread-replies">99</i> <b class="nnf_thread-author nnf_mod">Kroc</b> <img class="nnf_thread-sticky" src="/themes/greyscale/img/sticky_2x.png" width="16" height="16" alt="Announcement:" title="Announcement:"><img class="nnf_thread-locked" src="/themes/greyscale/img/security_closed_32.png" width="16" height="16" alt="Locked:" title="Locked:">
+		<i class="nnf_thread-replies">99</i> <b class="nnf_thread-author nnf_mod">Kroc</b> 
 		<a class="nnf_thread-name" href="thread_title">The quick brown fox jumps over the lazy dog</a>
 	</li></ol>
 	<nav><ol class="nnf_pages">
@@ -102,29 +95,23 @@
 
 	<p id="ptitle">
 		<label for="nnf_title-field">Title:</label>
-		<input id="nnf_title-field" name="title" type="text" size="28" maxlength="100" tabindex="1"
-		       autocomplete="off" required placeholder="Type thread title here…" value=""
-		       spellcheck="true">
+		<input id="nnf_title-field" name="title" size="28" maxlength="100" tabindex="1" autocomplete="off" required="" placeholder="Type thread title here…" value="" spellcheck="true" type="text">
 	</p>
 
 	<div id="rightcol">
 		<p id="nnf_name-http">
 			<!-- if the user is signed in using HTTP_AUTH -->
 			<label for="nnf_name-field-http">You are signed in as:</label>
-			<input id="nnf_name-field-http" name="username" type="text" size="28" tabindex="0"
-			       disabled value="" spellcheck="false">
+			<input id="nnf_name-field-http" name="username" size="28" tabindex="0" disabled="" value="" spellcheck="false" type="text">
 		</p><p id="nnf_name">
 			<label for="nnf_name-field">Name:</label>
-			<input id="nnf_name-field" name="username" type="text" size="28" maxlength="20" tabindex="3"
-			       autocomplete="on" required placeholder="Your name" value="" spellcheck="false">
+			<input id="nnf_name-field" name="username" size="28" maxlength="20" tabindex="3" autocomplete="on" required="" placeholder="Your name" value="" spellcheck="false" type="text">
 		</p><p id="nnf_pass">
 			<label for="nnf_pass-field">Password:</label>
-			<input id="nnf_pass-field" name="password" type="password" size="28" maxlength="20" tabindex="4"
-			       autocomplete="on" required placeholder="A password to keep your name" value="">
+			<input id="nnf_pass-field" name="password" size="28" maxlength="20" tabindex="4" autocomplete="on" required="" placeholder="A password to keep your name" value="" type="password">
 		</p><p id="nnf_email">
 			<label for="email">Email:</label>
-			<input id="email" name="email" type="text" tabindex="0"
-			       autocomplete="off" required value="example@abc.com">
+			<input id="email" name="email" tabindex="0" autocomplete="off" required="" value="example@abc.com" type="text">
 			(Leave this as-is, it’s a trap!)
 		</p>
 		<p id="nnf_error-none" class="ok">
@@ -153,16 +140,13 @@
 		<p id="ptext">
 			<label for="nnf_text-field">Message:</label>
 			<span id="wtext">
-				<textarea id="nnf_text-field" name="text" cols="40" rows="14" maxlength="50000" tabindex="2"
-				          required placeholder="Type your message here…" spellcheck="true"
-				></textarea>
+				<textarea id="nnf_text-field" name="text" cols="40" rows="14" maxlength="50000" tabindex="2" required="" placeholder="Type your message here…" spellcheck="true"></textarea>
 			</span>
 		</p>
 	</div>
 
 	<p id="psubmit"><label for="submit"><span>Submit</span>
-		<input id="submit" name="submit" type="image" src="/themes/greyscale/img/submit.png"
-		       width="40" height="40" tabindex="5" alt="&gt;">
+		<input id="submit" name="submit" src="/themes/greyscale/img/submit.png" tabindex="5" alt=">" width="40" type="image" height="40">
 	</label></p>
 
 	</form>
@@ -185,10 +169,10 @@
 </p><p id="signin" class="nnf_signed-in">
 	Signed in as<br><b class="nnf_signed-in-name">Kroc</b>
 </p><form id="signin" class="nnf_signed-out" method="post">
-	<input type="submit" name="signin" value="Sign In">
+	<input name="signin" value="Sign In" type="submit">
 </form></footer>
 
-<script defer><!--
+<script defer=""><!--
 //in iOS tapping a label doesn't click the related input element, we'll add this back in using JavaScript
 if (document.getElementsByTagName !== undefined) {
 	var labels = document.getElementsByTagName ("label");
@@ -207,5 +191,6 @@ return;var c=a.document;if(!c.querySelector)return;var d=c.querySelector("meta[n
 e=d&&d.getAttribute("content"),f=e+",maximum-scale=1",g=e+",maximum-scale=10",h=!0,i,j,k,l;if(!d)return;
 a.addEventListener("orientationchange",m,!1),a.addEventListener("devicemotion",o,!1)})(this);
 --></script>
+
 
 </body></html>
