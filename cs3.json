@@ -1,0 +1,13 @@
+{
+    "providers":{
+        "AnimeFlickProvider.kt":true,
+        "AnimePaheProvider.kt":true,
+        "DubbedAnimeProvider.kt":true,
+        "GogoanimeProvider.kt":true,
+        "KawaiifuProvider.kt":true,
+        "TenshiProvider.kt":true,
+        "WatchCartoonOnlineProvider.kt":true,
+        "WcoProvider.kt":true,
+        "ZoroProvider.kt":true
+    }
+}
