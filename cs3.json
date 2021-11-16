@@ -1,13 +1,35 @@
 {
     "providers":{
-        "AnimeFlickProvider.kt":true,
-        "AnimePaheProvider.kt":true,
-        "DubbedAnimeProvider.kt":true,
-        "GogoanimeProvider.kt":true,
-        "KawaiifuProvider.kt":true,
-        "TenshiProvider.kt":true,
-        "WatchCartoonOnlineProvider.kt":true,
-        "WcoProvider.kt":true,
-        "ZoroProvider.kt":true
+        "Anime": {
+            "AnimeFlickProvider.kt":true,
+            "AnimePaheProvider.kt":true,
+            "DubbedAnimeProvider.kt":true,
+            "GogoanimeProvider.kt":true,
+            "KawaiifuProvider.kt":true,
+            "TenshiProvider.kt":true,
+            "WatchCartoonOnlineProvider.kt":true,
+            "WcoProvider.kt":true,
+            "ZoroProvider.kt":true
+        },
+        "Movies":{
+            "AllMoviesForYouProvider.kt":true,
+            "AsiaFlixProvider.kt":true,
+            "AsianLoadProvider.kt":true,
+            "HDMProvider.kt":true,
+            "LookMovieProvider.kt":true,
+            "MeloMovieProvider.kt":true,
+            "SflixProvider.kt":true,
+            "ThenosProvider.kt":true,
+            "TrailersToProvider.kt":true,
+            "VMoveeProvider.kt":true,
+            "VfFilmProvider.kt":true,
+            "VfSerieProvider.kt":true,
+            "VidEmbedProvider.kt":true,
+            "VidstreamProviderTemplate.kt":true
+        },
+        "Torrent":{
+            "NyaaProvider.kt":true
+        }
     }
 }
+
